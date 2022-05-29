@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const drink = 'Energy drink';
+    let lyrics = '';
+    let cans = 99;
+
+    while (cans > 0) {
+      lyrics = lyrics + cans + ' cans of ' + drink + ' on the wall <br>'
+      lyrics = lyrics + cans + ' cans of ' + drink;
+      lyrics += 'Take one Down, pass it around, </br>'
+      if(cans > 1){
+        lyrics += (cans - 1) + ' cans of ' + drink + ' on the wall <br>'
+      }
+      else {
+        lyrics += 'No more cans of ' + drink + ' on the wall'
+      }
+      cans--;
+    }
+    document.write(lyrics);
+  </script>
+</body>
+
+</html>

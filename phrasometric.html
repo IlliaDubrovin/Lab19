@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Verdana, Helvetica, sans-serif;
+    }
+  </style>
+  <script>
+    const makePrase = () => {
+      const w1 = ['24/7', 'multi-tier', '30,000 foot', 'B-to-B', 'win-win']
+      const w2 = ['empowered', 'value-added', 'oriented', 'focused', 'aligned']
+      const w3 = ['process', 'solution', 'tipping-point', 'strategy', 'vision']
+
+      const r1 = Math.floor(Math.random() * w1.length)
+      const r2 = Math.floor(Math.random() * w2.length)
+      const r3 = Math.floor(Math.random() * w3.length)
+
+      const phrase = w1[r1] + " " + w2[r2] + " " + w3[r3];
+      document.getElementById('phrase').innerHTML = phrase;
+    }
+    window.onload = makePrase;
+  </script>
+</head>
+<body>
+  <h1>Phrase-O-Matio says:</h1>
+  <p id="phrase"></p>
+</body>
+</html>

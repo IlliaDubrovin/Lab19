@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temp</title>
+  <script>
+    const showTemp = () => {
+      const tempByHour = [59.2, 60.1, 63, 65, 62];
+
+      for (let i = 0; i < tempByHour.length; i++) {
+        let temp = tempByHour[i];
+        let id = 'temp' + i;
+        let li = document.getElementById(id)
+        if (i == 0) {
+          li.innerHTML = "the temperature at noon was " + temp
+        } else {
+          li.innerHTML = "the temperature at " + i + " was " + temp
+        }
+      }
+    }
+    window.onload = showTemp
+  </script>
+</head>
+
+<body>
+  <h1>Temperature</h1>
+  <ul>
+    <li id="temp0"></li>
+    <li id="temp1"></li>
+    <li id="temp2"></li>
+    <li id="temp3"></li>
+    <li id="temp4"></li>
+  </ul>
+</body>
+
+</html>

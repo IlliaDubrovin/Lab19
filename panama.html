@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const w1 = 'a'
+    const w2 = 'nam'
+    const w3 = 'nal p'
+    const w4 = 'lan a c'
+    const w5 = 'a man a p'
+
+    let phrase = ''
+
+    for (let i = 0; i < 4; i++) {
+      if (i == 0) {
+        phrase = w5;
+      }
+      else if (i == 1) {
+        phrase += w4;
+      }
+      else if (i == 2) {
+        phrase += w1 + w3;
+      }
+      else if (i == 3) {
+        phrase += w1 + w2 + w1;
+      }
+    }
+    alert(phrase)
+  </script>
+</body>
+
+</html>
